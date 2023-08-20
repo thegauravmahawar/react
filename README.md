@@ -35,3 +35,38 @@ export default function MyApp() {
 ```
 
 > React component names must always start with a capital letter, while HTML tags must be lowercase.
+
+The `export default` keywords specify the main component in the file.
+
+### Writing markup with JSX
+
+The markup syntax used in React is called *JSX*.
+
+JSX is stricter than HTML. You have to close tags like `<br />`. Your component also can't return multiple JSX tags. You have to wrap them into a shared parent, like a `<div>...</div>` or an empty `<>...</>` wrapper:
+
+```javascript
+function AboutPage() {
+  return (
+    <>
+      <h1>About</h1>
+      <p>Hello there.<br />How do you do?</p>
+    </>
+  );
+}
+```
+
+### Adding styles
+
+In React, you specify a CSS class with `className`. It works the same way as the HTML `class`attribute:
+
+```javascript
+<img className="avatar" />
+```
+
+Then you write the CSS rules for it in a separate CSS file:
+
+```css
+.avatar {
+  border-radius: 50%;
+}
+```
