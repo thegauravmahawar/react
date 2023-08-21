@@ -70,3 +70,39 @@ Then you write the CSS rules for it in a separate CSS file:
   border-radius: 50%;
 }
 ```
+
+### Displaying data
+
+```javascript
+return (
+  <h1>
+    {user.name}
+  </h1>
+);
+```
+
+```javascript
+return (
+  <img
+    className="avatar"
+    src={user.imageUrl}
+  />
+);
+```
+
+### Conditional rendering
+
+```javascript
+let content;
+if (isLoggedIn) {
+  content = <AdminPanel />
+} else {
+  content = <LoginForm />
+}
+return (
+  <div>
+    {content}
+  </div>
+);
+```
+
