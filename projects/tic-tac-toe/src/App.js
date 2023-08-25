@@ -1,5 +1,17 @@
 import { useState } from 'react';
 
+/**
+ *
+ * In React, a component is a piece of reusable code that represents a
+ * part of a user interface. Components are used to render, manage, and
+ * update the UI elements in your application.
+ *
+ * '<button>' is a JSX element. A JSX element is a combination of JavaScript
+ * code and HTML tags that describes what you'd like to display.
+ *
+ * @param {*} value
+ * @returns
+ */
 function Square({ value, onSquareClick }) {
   return (
     <button className='square' onClick={onSquareClick}>
@@ -52,6 +64,14 @@ function Board({ xIsNext, squares, onPlay }) {
   );
 }
 
+/**
+ *
+ * The 'export' keyword makes this function accessible outside this file.
+ * The 'default' keyword tells other files using your code that it's the
+ * main function in your file.
+ *
+ * @returns
+ */
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
