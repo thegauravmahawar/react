@@ -9,6 +9,9 @@ import { useState } from 'react';
  * '<button>' is a JSX element. A JSX element is a combination of JavaScript
  * code and HTML tags that describes what you'd like to display.
  *
+ * 'className="square"' is a button property or prop that tells the CSS how
+ * to style the button.
+ *
  * @param {*} value
  * @returns
  */
@@ -69,6 +72,10 @@ function Board({ xIsNext, squares, onPlay }) {
  * The 'export' keyword makes this function accessible outside this file.
  * The 'default' keyword tells other files using your code that it's the
  * main function in your file.
+ *
+ * React provides a special function called 'useState' that you can call from
+ * your component to let it "remember" things. 'history' stores the value and
+ * 'setHistory' is a function that can be used to change the value.
  *
  * @returns
  */
