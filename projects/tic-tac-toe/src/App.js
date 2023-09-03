@@ -77,6 +77,11 @@ function Board({ xIsNext, squares, onPlay }) {
  * your component to let it "remember" things. 'history' stores the value and
  * 'setHistory' is a function that can be used to change the value.
  *
+ * To collect data from multiple children, or to have two child components
+ * communicate with each other, declare the shared state in their parent component
+ * instead. The parent component can pass that state back down to the children via props.
+ * This keeps the child components in sync with each other and with their parent.
+ *
  * @returns
  */
 export default function Game() {
