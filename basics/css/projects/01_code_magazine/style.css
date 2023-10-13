@@ -54,7 +54,7 @@ li {
   font-weight: bold;
 }
 
-ul {
+.related-list {
   list-style: none;
 }
 
@@ -66,4 +66,12 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
 }
