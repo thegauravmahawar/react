@@ -1,4 +1,4 @@
-p# CSS
+# CSS
 
 **C**ascading **S**tyle **S**heets
 
@@ -51,5 +51,3 @@ Highest Priority:
 - Universal selector (*)
 
 If multiple selectors of same priority are applied, then the last selector in the code applies.
-
-## CSS Theory 2: Inheritance and the Universal Selector
