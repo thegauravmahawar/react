@@ -15,7 +15,7 @@ h1 {
 }
 ```
 
-## CSS Theory 1: Conflicts between Selectors
+## CSS Theory: Conflicts between Selectors
 
 ```html
 <p id="author-text" class="author">
@@ -51,3 +51,15 @@ Highest Priority:
 - Universal selector (*)
 
 If multiple selectors of same priority are applied, then the last selector in the code applies.
+
+## CSS Theory: CSS Box Model
+
+- **Content**: Text, images, etc.
+- **Border**: A line around the element, still **inside** of the element
+- **Padding**: Invisible space around the content,**inside** of the element
+- **Margin**: Space **outside** of the element, between elements
+- **Fill area**: Area that gets filled with **background color** or **background image**
+
+**Final element width** = left border + left padding + width + right padding + right border
+
+**Final element height** = top border + top padding + height + bottom padding + bottom border
