@@ -3,6 +3,14 @@
   margin: 0;
 }
 
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
 h1, h2, h3, h4, p, li {
   font-family: sans-serif;
   color: #444;
@@ -152,4 +160,16 @@ a:active {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  bottom: 50px;
+  right: 50px;
 }

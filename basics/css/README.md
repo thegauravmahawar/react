@@ -63,3 +63,26 @@ If multiple selectors of same priority are applied, then the last selector in th
 **Final element width** = left border + left padding + width + right padding + right border
 
 **Final element height** = top border + top padding + height + bottom padding + bottom border
+
+## Block-level elements
+
+- Elements are formatted visually as **blocks**.
+- Elements occupy **100% of parent element's width**, no matter the content.
+- Elements are **stacked vertically** by default, one after another.
+- E.g.: `body`, `main`, `header`, `footer`, `div`, `h1-h6`, `p`, `ul`, `ol`, etc.
+
+## Inline elements
+
+- Occupies only the space **necessary for its content**.
+- Causes **no line-breaks** after or before the element.
+- Box model applies in a different way: **height and widths do not apply**.
+- **Paddings and margins** are applied only **horizontally** (left and right).
+- E.g.: `strong`, `em`, `a`, `button`, etc.
+
+## Normal Flow vs. Absolute Positioning
+
+| Normal Flow | Absolute Positioning |
+|---|---|
+| Default positioning | Element is removed from the normal flow |
+| Elements are simply laid out according to their order in the HTML code | No impact on surrounding elements, might overlap them |
+| `position: relative` | `position: absolute` |
