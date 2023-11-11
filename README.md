@@ -5,6 +5,12 @@
 - [React Documentation](https://react.dev/learn)
 - [Next.js Documentation](https://nextjs.org/learn/foundations/about-nextjs/what-is-nextjs)
 - [Create React App](https://create-react-app.dev/docs/getting-started/)
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
+
+## Projects
+
+- [Simple Calculator](projects/simple-calculator)
+- [Todo App 1](projects/todo-app-1)
 
 ## React Basics
 
