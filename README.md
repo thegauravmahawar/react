@@ -11,6 +11,7 @@
 
 - [Simple Calculator](projects/simple-calculator)
 - [Todo App 1](projects/todo-app-1)
+- [Todo App 2](projects/todo-app-2)
 
 ## React Basics
 
