@@ -12,6 +12,7 @@ export default function SignupPage() {
     email: '',
     password: ''
   })
+
   const [buttonDisabled, setButtonDisabled] = React.useState(false);
 
   const onSignup = async () => {
@@ -19,10 +20,10 @@ export default function SignupPage() {
       const response = await axios.post('/api/users/signup', user);
       console.log('Signup success: ', response.data);
       toast.success('User signup up successfully.');
-      router.push(`/profile/${response.data.id}`)
+      router.push(`/profile/${response.data.id}`);
     } catch (error: any) {
-      console.log('Signup failed: ', error.message);
-      toast.error(error.message);
+      console.log('Signup failed: ', error);
+      toast.error(error.response.data.error);
     }
   }
 
@@ -43,9 +44,9 @@ export default function SignupPage() {
           reverseOrder={false}
         />
       </div>
-      <h1>Signup</h1>
+      {/* <h1>Signup</h1> */}
       <hr />
-      <label htmlFor="email">email</label>
+      <label htmlFor="email">Email</label>
       <input className="p-2 border border-gray-300 rounded-lg mb-4
       focus:outline-none focus:border-gray-600 text-black"
         id="email"
@@ -55,7 +56,7 @@ export default function SignupPage() {
         onChange={(e) => setUser({...user, email: e.target.value})}
       />
 
-      <label htmlFor="password">password</label>
+      <label htmlFor="password">Password</label>
       <input className="p-2 border border-gray-300 rounded-lg mb-4
       focus:outline-none focus:border-gray-600 text-black"
         id="password"
@@ -72,7 +73,7 @@ export default function SignupPage() {
         Signup
       </button>
 
-      <Link href="/login">Already have an account? Login.</Link>
+      <Link href="/login">Already have an account? <u>Login.</u></Link>
     </div>
   )
 }

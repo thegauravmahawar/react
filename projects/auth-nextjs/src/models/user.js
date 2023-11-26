@@ -10,6 +10,10 @@ const schema = new mongoose.Schema({
     type: String,
     required: [true, 'Please provide a password.']
   },
+  isActive: {
+    type: Boolean,
+    default: false
+  },
   forgotPasswordToken: String,
   forgotPasswordTokenExpiry: Date,
   verifyToken: String,
